@@ -1,0 +1,67 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --grayimp: #e8e5e480;
+}
+
+
+/* This is a box-sizing the "https://www.paulirish.com/2012/box-sizing-border-box-ftw/" */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+/* Header */
+.header {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.headerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grayimp);
+    width: 30rem;
+    height: 5rem;
+    padding: .5rem;
+    border-radius: 3rem;
+}
+
+.headerNav div{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.headerNav div:first-of-type{
+    background-color: var(--white);
+    border-radius: 2rem;   
+}
+
+.headerNav div:focus{
+    background-color: var(--white);
+    border-radius: 2rem;   
+}
+
+
+
